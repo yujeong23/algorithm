@@ -7,6 +7,7 @@ import sys
 sys.stdin = open('input.txt')
 
 # 선택정렬
+# nums라는 리스트에 작은 값부터 정렬되도록 선택 정렬 후 중앙에 저장된 값 출력
 N = int(input())
 nums = list(map(int,input().split()))
 for i in range(0, N-1):
