@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36012203-8497-439a-8df1-b86510e71e6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1936_1대1가위바위보/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1936_1대1가위바위보/s1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2056_연월일달력/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/2056_연월일달력/s1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2058_자릿수더하기/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/2058_자릿수더하기/s1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2063_중간값찾기/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/2063_중간값찾기/s1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2072_홀수만더하기/s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/2072_홀수만더하기/s1.py" afterDir="false" />
-    </list>
+    <list default="true" id="36012203-8497-439a-8df1-b86510e71e6e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/2072_홀수만더하기/s1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -32,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1936_1대1가위바위보/s1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
+            <state relative-caret-position="19">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
@@ -75,27 +68,17 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
-    <option name="y" value="16" />
-    <option name="width" value="1339" />
-    <option name="height" value="1009" />
+    <option name="y" value="15" />
+    <option name="width" value="1340" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="0814" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0814" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -389,17 +372,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1936_1대1가위바위보/s1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2072_홀수만더하기/s1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1936_1대1가위바위보/s1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
