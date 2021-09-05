@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open('input.txt')
 
-def sell(M, K, t):
+def sell(M, K):
     stack = []
 
     if 0 in t:                      # 0초에 오는 손님도 있음 -> 무조건 붕어빵 못 받음
@@ -13,7 +13,7 @@ def sell(M, K, t):
         if i in t:
             while i in t:
                 if stack:
-                    stack.pop(0)
+                    stack.pop()
                     idx = t.index(i)
                     t.pop(idx)
                 else:
@@ -24,5 +24,5 @@ T = int(input())
 for tc in range(1, T+1):
     N, M, K = map(int, input().split())
     t = list(map(int, input().split()))
-    print('#{} {}'.format(tc, sell(M, K, t)))
+    print('#{} {}'.format(tc, sell(M, K)))
 
