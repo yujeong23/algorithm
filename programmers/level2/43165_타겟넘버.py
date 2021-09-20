@@ -1,5 +1,12 @@
+def solution(numbers, target):
+    global cnt
+    result = 0
+    cnt = 0
+    calculate(numbers, target, result, cnt)
 
-def calculate(result, numbers, target, cnt):
+
+
+def calculate(numbers, target, result, cnt):
     if not numbers:
         if result == target:
             cnt += 1
@@ -7,12 +14,10 @@ def calculate(result, numbers, target, cnt):
         else:
             return
 
-    calculate(result + numbers[0], numbers[1::], target, cnt)
-    calculate(result - numbers[0], numbers[1::], target, cnt)
-
-    return cnt
+    calculate(numbers, target, result + numbers[0], cnt)
+    calculate(numbers, target, result - numbers[0], cnt)
 
 
 numbers = [1, 1, 1, 1, 1]
 target = 3
-print(calculate(0, numbers, target, 0))
+print(solution(numbers, target))
