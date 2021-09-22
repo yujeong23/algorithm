@@ -1,15 +1,19 @@
+# 시간 초과
 def solution(numbers):
-    answer = ''
-    num_lst = []
-    maxv = 0
+
+    for i in range(len(numbers)-1):
+        for j in range(i+1,len(numbers)):
+            if numbers[i][0] < numbers[j][0]:
+                numbers[i], numbers[j] = numbers[j], numbers[i]
+            elif numbers[i][0] == numbers[j][0]:
+                if numbers[i]+numbers[j] < numbers[j]+numbers[i]:
+                    numbers[i], numbers[j] = numbers[j], numbers[i]
 
 
-    def check(num_lst, max_num):
-        if len(num_lst) == 0:
-            if maxv < max_num
-
-    check(num_lst)
-    return answer
+    result =  ''.join(numbers_str)
+    return int(result)
 
 numbers = [3, 30, 34, 5, 9]
-print(solution(numbers))
+# numbers = [0, 0, 0]
+numbers_str = list(map(str,numbers))
+print(solution(numbers_str))
