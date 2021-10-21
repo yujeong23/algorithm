@@ -1,6 +1,6 @@
 import sys
 sys.stdin=open('input.txt')
-
+# 프림 알고리즘
 def prim(s):
     inf = float('inf')
     key = [inf] * N
@@ -30,11 +30,11 @@ for tc in range(1, T+1):
     X = list(map(int, input().split()))
     Y = list(map(int, input().split()))
     E = float(input())
-    island = [[0] * N for _ in range(N)]
+    island = [[0] * N for _ in range(N)]                            # 섬 = 인덱스
     for i in range(N):
         for j in range(N):
             if not island[i][j]:
-                result = ((X[i] - X[j])**2 + (Y[i] - Y[j])**2)
+                result = ((X[i] - X[j])**2 + (Y[i] - Y[j])**2)     # 섬들 사이의 거리 저장
                 island[i][j] = result
                 island[j][i] = result
 
