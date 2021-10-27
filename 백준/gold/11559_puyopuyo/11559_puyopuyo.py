@@ -1,7 +1,7 @@
 import sys
 sys.stdin=open('input.txt')
 from collections import deque
-
+# 터뜨리고 배열 정리
 def move(puyo):
     for col in range(6):
         idx = 11
@@ -11,7 +11,7 @@ def move(puyo):
             puyo[idx][col], puyo[row][col] = puyo[row][col], puyo[idx][col]
             idx -= 1
 
-
+# 연속된 색깔 찾기
 def bfs(x, y, col):
     check = deque([(x, y)])
     visited = [(x, y)]
