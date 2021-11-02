@@ -5,7 +5,7 @@ def solution(maps):
     visited = [[0] * m for _ in range(n)]
     visited[-1][-1] = 1
     queue = deque([(n-1, m-1, 1)])
-    result = 0
+    result = -1
     dx = [-1, 1, 0, 0]
     dy = [0, 0, -1, 1]
 
@@ -23,13 +23,12 @@ def solution(maps):
                     queue.append((nx, ny, cnt+1))
                     visited[nx][ny] = 1
 
-    if result:
-        return result
-    else:
-        return -1
+    return result
+
 print(solution(maps))
 
 # 효율성 x
+# 최단거리니까 그냥 bfs로 한 번에 구하면 된다!!
 # def solution(maps):
 #     n, m = len(maps), len(maps[0])
 #     queue = deque([(n-1, m-1, 1)])
