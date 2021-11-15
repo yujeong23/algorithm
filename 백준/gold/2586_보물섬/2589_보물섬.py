@@ -2,6 +2,7 @@ import sys
 sys.stdin=open('input.txt')
 from collections import deque
 
+# pypy에서 통과
 def bfs(si, sj, cnt):
 
     di = [0, 0, -1, +1]
