@@ -1,32 +1,51 @@
-def comb(n, visited, length):
-    global answer
-
-    if len(visited) == n:
-        for i in range(len(visited)):
-            if visited[i] == 1:
-                answer +=
-    else:
-        for idx in range(length):
-            if not visited[idx]:
-                visited[idx] = 1
-                comb(n, visited, length)
-                visited[idx] = 0
+# 조합 이용한 풀이 -> tc 1번 통과 x
+# def solution(clothes):
+#     answer = 0
+#     dict = {}
+#     for value, key in clothes:
+#         if key in dict:
+#             dict[key] += 1
+#         else:
+#             dict[key] = 1
+#
+#     lst = list(dict.values())
+#
+#     for i in range(1, len(lst)+1):
+#
+#         def comb(idx, n):
+#             nonlocal answer, visited, lst
+#
+#             if sum(visited) == n:
+#                 cnt = 1
+#                 for i in range(len(visited)):
+#                     if visited[i]:
+#                         cnt *= lst[i]
+#                 answer += cnt
+#
+#             for idx in range(idx, len(lst)):
+#                 if not visited[idx]:
+#                     visited[idx] = 1
+#                     comb(idx+1, n)
+#                     visited[idx] = 0
+#
+#         visited = [0] * len(lst)
+#         comb(0, i)
+#     return answer
 
 def solution(clothes):
-    answer = 0
+    answer = 1
     dict = {}
     for value, key in clothes:
         if key in dict:
             dict[key] += 1
         else:
-            dict[key] = 1
+            dict[key] = 2
 
-    lst = list(dict.values())
+    for num in dict.values():
+        answer *= num
 
-    for i in range(len(lst)):
-        visited = [0] * len(lst)
-        comb(i, visited, len(lst))
-    return answer
+    return answer-1
+
 
 clothes = [["yellowhat", "headgear"], ["bluesunglasses", "eyewear"], ["green_turban", "headgear"]]
 print(solution(clothes))
