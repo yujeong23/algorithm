@@ -9,7 +9,7 @@ for num in nums:
     left = 0
     for d in deq:
         if num == d:
-           break
+            break
         else:
             left += 1
     right = N - left
