@@ -1,5 +1,7 @@
 N = int(input())
 nums = [float(input()) for _ in range(N)]
-maxV = 0
-print(nums)
-round(maxV, 3)
+
+for i in range(N-1):
+    nums[i+1] = max(nums[i+1], nums[i+1] * nums[i])
+
+print("%.3f"%max(nums))                     # round 쓰니까 틀림,,
