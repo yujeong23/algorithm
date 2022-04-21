@@ -17,3 +17,14 @@ for s in sticks:
         break
 
 print(ans)
+
+# X = int(input())
+# ans = 0
+# stick = 64
+# while X > 0:
+#     if stick > X:
+#         stick = stick // 2
+#     else:
+#         ans += 1
+#         X -= stick
+# print(ans)
