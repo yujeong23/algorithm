@@ -1,20 +1,15 @@
-def check(x, y, N):
-    global answer
-    for i in range(x, x+(N//3)):
-        for j in range(y, y+(N//3)):
-            if papers[i][j] != papers[x][y]:
-                return False
-    else:
-        if papers[x][y] == -1:
-            answers[0] += 1
-        elif papers[x][y] == 0:
-            answers[1] += 1
-        else:
-            answers[2] += 1
-        return True
-
 def divide(s, e, N):
-    if N == 1:
+    global answer
+    flag = 1
+    for i in range(s, s+N):
+        for j in range(e, e+N):
+            if papers[i][j] != papers[s][e]:
+                flag = 0
+                break
+        if not flag:
+            break
+
+    else:
         if papers[s][e] == -1:
             answers[0] += 1
         elif papers[s][e] == 0:
@@ -22,10 +17,10 @@ def divide(s, e, N):
         else:
             answers[2] += 1
         return
+
     for r in range(3):
         for c in range(3):
-            if not check(s+r*(N//3), e+c*(N//3), N):
-                divide(s+r*(N//3), e+c*(N//3), N//3)
+            divide(s+r*(N//3), e+c*(N//3), N//3)
 
 N = int(input())
 papers = [list(map(int, input().split())) for _ in range(N)]
