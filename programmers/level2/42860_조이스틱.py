@@ -1,3 +1,4 @@
+# 모든 테케 x
 def solution(name):
     if set(name) == 'A':
         return 0
