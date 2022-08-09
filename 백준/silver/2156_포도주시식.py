@@ -1,26 +1,19 @@
-def drink(num, total):
-    global ans
-
-    if num == n:
-        ans = max(total, ans)
-        return
-
-    drink(num + 1, total)
-    if n-2 in range(n):
-        if not drank[num-2] or not drank[num-1]:
-            drank[num] = 1
-            drink(num+1, total+grapes[num])
-            drank[num] = 0
-
-    else:
-        drank[num] = 1
-        drink(num + 1, total + grapes[num])
-        drank[num] = 0
-
+# dp[i]에서 비교해야할 경우
+# i-2 i-2 i
+#  x   o  o
+#  o   x  o
+#  x   x  o
 
 n = int(input())
 grapes = list(int(input()) for _ in range(n))
-drank = [0] * n
-ans = 0
-drink(0, 0)
-print(ans)
+dp = [0] * n
+dp[0] = grapes[0]
+if n > 1:
+    dp[1] = grapes[0] + grapes[1]
+
+if n > 2:
+    dp[2] = max(grapes[1] + grapes[2], dp[0] + grapes[2], dp[1])
+    for i in range(3, n):
+        dp[i] = max(dp[i-3] + grapes[i-1] + grapes[i], dp[i-2] + grapes[i], dp[i-1])
+
+print(max(dp))
