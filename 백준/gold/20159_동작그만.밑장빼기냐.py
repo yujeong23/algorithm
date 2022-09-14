@@ -16,4 +16,5 @@ for i in range(N//2):
 for j in range(N//2):
     temp2 = first[j+1] + second[-2] - second[j]
     ans = max(ans, temp2)
+    
 print(ans)
