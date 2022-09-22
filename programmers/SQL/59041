@@ -1,0 +1,7 @@
+-- HAVING은 그룹화가 발생한 후 레코드를 필터링할 때 사용 -> GROUP BY 뒤에 사용
+-- WHERE은 그룹화가 발생하기 전행을 필터링할 때 사용 -> GROUP BY 앞에 사용
+SELECT NAME, COUNT(NAME) AS 'COUNT'
+FROM ANIMAL_INS
+GROUP BY NAME
+HAVING COUNT(NAME) >= 2
+ORDER BY NAME
