@@ -13,8 +13,12 @@ for r in range(N):
             chicken.append([r, c])
 
 for lst in combinations(chicken, M):
-    dist = 0
-    for s1, s2 in lst:
-        for d1, d2 in house:
-            dist += abs(s1-d1) + abs(s2-d2)
-    
+    total = 0
+    for d1, d2 in house:
+        dist = N*N
+        for s1, s2 in lst:
+            dist = min(dist, abs(s1-d1) + abs(s2-d2))
+        total += dist
+    ans = min(ans, total)
+
+print(ans)
